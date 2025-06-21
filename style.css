@@ -4,7 +4,7 @@ body {
   background-color: black;
   font-family: "Moonich Manufacture", sans-serif;
   overflow-x: hidden;
-  cursor: url("cursor.jpg"), auto;
+  font-size: 12px;
 }
 .purple {
   background-color: #fa01fe;
@@ -15,7 +15,7 @@ body {
 .black {
   background-color: black;
   width: 100%;
-  height: 630px;
+  height: 900px;
   overflow-x: hidden;
 }
 .colors {
@@ -49,7 +49,7 @@ p {
 .ethical {
   position: relative;
   top: 70px;
-  font-size: 20px;
+  font-size: 25px;
   text-align: justify;
   left: 250px;
 }
@@ -70,7 +70,7 @@ p {
   border-radius: 30px;
 }
 .buttons {
-  top: 120px;
+  top: 80px;
   padding: 40px;
   position: relative;
   gap: 40px;
@@ -115,10 +115,10 @@ p {
   position: relative;
   text-align: justify;
   left: 60px;
-  top: 80px;
+  bottom: 100px;
 }
 .about-me {
-  font-size: 20px;
+  font-size: 25px;
 }
 .about-img {
   width: 580px;
@@ -153,7 +153,7 @@ p {
 
 .text p {
   margin: 5px 0;
-  font-size: 18px;
+  font-size: 22px;
   color: #cfc6e2;
   margin-top: 30px;
 }
@@ -170,7 +170,7 @@ p {
   position: relative;
   left: 60px;
   display: flex;
-  top: 200px;
+  top: 80px;
 }
 .education-img {
   width: 580px;
@@ -187,6 +187,10 @@ p {
   gap: 1px;
   flex-direction: column;
 }
+.skills {
+  position: relative;
+  bottom: 90px;
+}
 .skills-title {
   color: white;
   font-size: 40px;
@@ -196,13 +200,13 @@ p {
 }
 .them {
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-color: #660066;
   position: relative;
   top: 350px;
 }
 .html {
-  width: 400px;
+  width: 350px;
   background-color: black;
   color: #ff00ff;
   height: 80px;
@@ -223,6 +227,16 @@ p {
   justify-content: center;
   align-items: center;
   gap: 60px;
+  bottom: 20px;
+}
+.fourth {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  bottom: 10px;
 }
 .first {
   display: flex;
@@ -231,6 +245,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 60px;
+  bottom: 20px;
 }
 .projects-title {
   color: white;
@@ -245,6 +260,10 @@ p {
   align-items: center;
   justify-content: center;
 }
+.projects {
+  position: relative;
+  bottom: 100px;
+}
 .box {
   width: 400px;
   position: relative;
@@ -253,12 +272,17 @@ p {
   border-radius: 30px;
   border: 5px solid #ff00ff;
 }
+.box:hover {
+  box-shadow: 0px 17px 27px 8px purple, 7px 11px 15px 11px rgba(0, 0, 0, 0.1);
+  transform: scale();
+  transition: 2s ease;
+}
 .cont-title {
   color: white;
   font-size: 40px;
   text-align: center;
   position: relative;
-  top: 620px;
+  top: 570px;
 }
 .real-cont {
   display: flex;
@@ -279,6 +303,7 @@ input {
   color: white;
   font-size: 20px;
   border-radius: 40px;
+  text-align: center;
 }
 textarea {
   height: 250px;
@@ -287,6 +312,7 @@ textarea {
   background-color: black;
   color: white;
   font-size: 20px;
+  text-align: center;
   border-radius: 25px;
 }
 .send {
@@ -314,11 +340,13 @@ button {
 }
 .contact {
   display: flex;
+  position: relative;
+  bottom: 80px;
 }
 .to {
   position: relative;
   top: 400px;
-  left: 500px;
+  left: 300px;
   color: #ff00ff;
   display: flex;
   flex-direction: column;
@@ -326,9 +354,11 @@ button {
 }
 .jabo {
   color: white;
+  position: relative;
+  bottom: 10px;
 }
 .fa-envelope {
-  font-size: 60px;
+  font-size: 40px;
 }
 .stress {
   position: relative;
@@ -338,71 +368,29 @@ button {
   gap: 30px;
 }
 .fa-phone {
-  font-size: 60px;
+  font-size: 40px;
 }
 .fa-location-dot {
-  font-size: 60px;
+  font-size: 40px;
 }
-.toggle-switch {
+.certi-title {
+  color: white;
+  font-size: 40px;
+  text-align: center;
   position: relative;
-  width: 100px;
-  top: 100px;
-  height: 50px;
-  --light: #d8dbe0;
-  --dark: #28292c;
-  --link: rgb(27, 129, 112);
-  --link-hover: rgb(24, 94, 82);
+  top: 480px;
 }
-
-.switch-label {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background-color: var(--dark);
-  border-radius: 25px;
-  cursor: pointer;
-  border: 3px solid var(--dark);
-}
-
-.checkbox {
+.certi-sub {
+  color: lightgrey;
+  font-size: 20px;
   position: relative;
-  top: 40px;
-  display: none;
+  top: 470px;
 }
-
-.slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.checkbox:checked ~ .slider {
-  background-color: var(--light);
-}
-
-.slider::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
-  box-shadow: inset 12px -4px 0px 0px var(--light);
-  background-color: var(--dark);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.checkbox:checked ~ .slider::before {
-  -webkit-transform: translateX(50px);
-  -ms-transform: translateX(50px);
-  transform: translateX(50px);
-  background-color: var(--dark);
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.achieve {
+  width: 1000px;
+  height: 700px;
+  border: 3px solid #ff00ff;
+  position: relative;
+  top: 500px;
+  left: 250px;
 }
